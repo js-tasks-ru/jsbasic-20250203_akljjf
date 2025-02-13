@@ -14,14 +14,10 @@ function isValid(name) {
     return false;
   }
 
-  const empty = "";
   const hasSpace = name.includes(" ");
   const minLength = 4;
 
-  if (name !== empty && !hasSpace && name.length >= minLength) {
-    return true;
-  }
-  return false;
+  return name !== "" && !hasSpace && name.length >= minLength;
 }
 
 function sayHello() {
