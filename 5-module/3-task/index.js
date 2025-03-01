@@ -10,13 +10,13 @@ function initCarousel() {
 
   buttonLeft.addEventListener("click", () => {
     currentSlide -= 1;
-    carousel.style.transform = `translate(-${slideWidth * currentSlide}px)`;
+    carousel.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
     buttonLeft.style.display = currentSlide === 0 ? "none" : "";
     buttonRight.style.display = currentSlide === 3 ? "none" : "";
   });
   buttonRight.addEventListener("click", () => {
     currentSlide += 1;
-    carousel.style.transform = `translate(-${slideWidth * currentSlide}px)`;
+    carousel.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
     buttonLeft.style.display = currentSlide === 0 ? "none" : "";
     buttonRight.style.display = currentSlide === 3 ? "none" : "";
   });
