@@ -5,7 +5,7 @@ function highlight(table) {
     const status = row.lastElementChild;
 
     if (status.hasAttribute("data-available")) {
-      const isTrue = status.getAttribute("data-available");
+      const isTrue = status.dataset.available;
       if (isTrue === "true") {
         row.classList.add("available");
       } else {
